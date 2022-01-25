@@ -80,7 +80,7 @@ string3= 'p1l lolp2qt qwerty3'
 sol3_1= re.findall('\w+\d\w+', string3)
 print(sol3_1)
 
-# ------------- Soal 4: dapatkan kata 2 huruf sesudah karakter '#' -------------
+# ------------- Soal 4: dapatkan kata 2 karakter (selain new line) sesudah karakter '#' -------------
 string4= '#q2ab aksd#vasova #  o'
 sol4_1= re.findall('#..(\w+)', string4)
 print(sol4_1)
@@ -99,3 +99,5 @@ print(sol_6)
 string7= 'Amit 34-3456 12-05-2007, XYZ 56-4532 11-11-2011, ABC 67-8945 12-01-2009'
 sol_7= re.findall(r'\d{2}-\d{2}-\d{4}', string7)
 print(sol_7)
+
+
