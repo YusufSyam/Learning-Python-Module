@@ -51,6 +51,20 @@ pattern1= re.compile('jett')
 compile1= pattern1.findall(string1)
 print(compile1)
 
-
-compile2= pattern1.findall('i am the hunter !!!')
+# Melakukan sub
+compile2= pattern1.sub(r'sova', string1)
 print(compile2)
+
+# -------------- re.finditer(pattern, string) ----------------
+# Mirip dengan findall tapi ini mengembalikan objek bukan list
+string2= '''
+jett
+12312312313
+kill joy raze recon noob kebab
+'''
+
+finditer1= re.finditer(r'e', string2)
+
+for match in finditer1:
+    print(match)
+
