@@ -39,6 +39,14 @@ replace_substring= 'kill'
 sub1= re.sub(change_substring, replace_substring, string1)
 print(sub1)
 
+# -------------- re.split(pattern, string) ----------------
+split1= re.split(r'\.', '100.000.0.00') # kita juga bisa mendefinisikan maxsplit
+print(split1)
+
+# Split yang lebih kompleks, memisah titik atau koma atau minus
+split2= re.split(r'[,.-]', '100.000,0-00')
+print(split2)
+
 # -------------- re.compile() ----------------
 # Penjelasannya susah
 
