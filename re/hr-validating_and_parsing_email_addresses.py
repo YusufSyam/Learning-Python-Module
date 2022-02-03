@@ -4,7 +4,7 @@ import re
 
 n= int(input())
 
-emails= [input() for i in range(n)]
+emails= [input() for _ in range(n)]
 # emails= ['DEXTER <dexter@hotmail.com>', 'VIRUS <virus!@variable.:p>']
 # emails= '''shashank <shashank@9mail.com>
 # shashank <shashank@gmail.9om>
