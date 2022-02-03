@@ -1,3 +1,5 @@
+# https://www.hackerrank.com/challenges/validating-named-email-addresses/problem
+
 import re
 
 n= int(input())
